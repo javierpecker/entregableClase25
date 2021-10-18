@@ -72,6 +72,7 @@ app.engine('hbs', (0, _expressHandlebars["default"])({
 var publicPath = _path["default"].resolve(__dirname, '../public');
 
 exports.publicPath = publicPath;
+console.log(_config["default"].MONGO_ATLAS_URL);
 var StoreOptions = {
   store: _connectMongo["default"].create({
     mongoUrl: _config["default"].MONGO_ATLAS_URL,

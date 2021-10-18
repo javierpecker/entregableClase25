@@ -11,8 +11,9 @@ var _dotenv = _interopRequireDefault(require("dotenv"));
 
 _dotenv["default"].config();
 
+console.log(process.env.MONGO_ATLAS_SRV);
 var _default = {
-  MONGO_ATLAS_URL: process.env.MONGO_ATLAS_SRV || 'mongodb+srv://admin:coder1234@ecommerce.ppim6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+  MONGO_ATLAS_URL: process.env.MONGO_ATLAS_SRV || 'db',
   PORT: process.env.PORT || 8080
 };
 exports["default"] = _default;
